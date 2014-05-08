@@ -1,13 +1,31 @@
 # Sensitive information #
 #########################
 # Ignore configuration files that may contain sensitive information.
-docroot/sites/*/settings*.php
+src/sites/*/settings.php
+
+# Ignore non custom code
+src/sites/all/modules/contrib*
+src/sites/all/themes/contrib*
+src/*.php
+src/*.txt
+src/includes*
+src/scripts*
+src/profiles*
+src/modules*
+src/themes*
+src/sites/README.txt
+src/sites/all/libraries*
+src/web.config
+src/sites/all/modules/README.txt
+src/sites/all/themes/README.txt
+src/misc*
+src/sites/example.sites.php
 
 # User Generated Content #
 ##########################
-docroot/files
-docroot/sites/*/files
-docroot/sites/*/private
+src/files
+src/sites/*/files
+src/sites/*/private
 
 # Vagrant Files #
 #################
